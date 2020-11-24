@@ -8,10 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+    @State var todos = [Todo]()
+    @State var task = ""
+    
+    private func addTodo() {
+        self.todos.append(Todo(name: task))
+        task = ""
     }
+    
+    func deleteTodo(at offset: IndexSet) {
+        todos.remove(atOffsets: offset)
+    }
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                HStack {
+                    TextField("Add Todo", text: $task)
+                    Button(action: addTodo) {
+                        Text("Add todo")
+                    }
+                }
+                List {
+                    ForEach(todos) { todo in
+                        Text(todo.name)
+                    }
+                    .onDelete(perform: deleteTodo )
+                }
+                
+            }.padding()
+            .navigationBarTitle("To Do LIst", displayMode: .inline)
+        }
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
