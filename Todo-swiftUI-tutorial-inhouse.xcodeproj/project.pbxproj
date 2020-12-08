@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB92F5BE77DBFCA02B3559E8 /* Pods_Todo_swiftUI_tutorial_inhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFBE7356D90242420CA8489 /* Pods_Todo_swiftUI_tutorial_inhouse.framework */; };
 		D12F1106256D3BE00082ADBA /* Todo_swiftUI_tutorial_inhouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12F1105256D3BE00082ADBA /* Todo_swiftUI_tutorial_inhouseApp.swift */; };
 		D12F1108256D3BE00082ADBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12F1107256D3BE00082ADBA /* ContentView.swift */; };
 		D12F110A256D3BE30082ADBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12F1109256D3BE30082ADBA /* Assets.xcassets */; };
 		D12F110D256D3BE30082ADBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12F110C256D3BE30082ADBA /* Preview Assets.xcassets */; };
 		D12F1117256D3C210082ADBA /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12F1116256D3C210082ADBA /* Todo.swift */; };
+		D12F111C256D53E30082ADBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D12F111B256D53E30082ADBA /* GoogleService-Info.plist */; };
+		D12F113C256E63600082ADBA /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12F113B256E63600082ADBA /* AddTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36315E0266B1203B72414577 /* Pods-Todo-swiftUI-tutorial-inhouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo-swiftUI-tutorial-inhouse.debug.xcconfig"; path = "Target Support Files/Pods-Todo-swiftUI-tutorial-inhouse/Pods-Todo-swiftUI-tutorial-inhouse.debug.xcconfig"; sourceTree = "<group>"; };
+		55BE8F689E729C9CFD86878A /* Pods-Todo-swiftUI-tutorial-inhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo-swiftUI-tutorial-inhouse.release.xcconfig"; path = "Target Support Files/Pods-Todo-swiftUI-tutorial-inhouse/Pods-Todo-swiftUI-tutorial-inhouse.release.xcconfig"; sourceTree = "<group>"; };
+		5EFBE7356D90242420CA8489 /* Pods_Todo_swiftUI_tutorial_inhouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todo_swiftUI_tutorial_inhouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12F1102256D3BE00082ADBA /* Todo-swiftUI-tutorial-inhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo-swiftUI-tutorial-inhouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12F1105256D3BE00082ADBA /* Todo_swiftUI_tutorial_inhouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_swiftUI_tutorial_inhouseApp.swift; sourceTree = "<group>"; };
 		D12F1107256D3BE00082ADBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		D12F110C256D3BE30082ADBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D12F110E256D3BE30082ADBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12F1116256D3C210082ADBA /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		D12F111B256D53E30082ADBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D12F113B256E63600082ADBA /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB92F5BE77DBFCA02B3559E8 /* Pods_Todo_swiftUI_tutorial_inhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEBB58215D58D42196E53E2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36315E0266B1203B72414577 /* Pods-Todo-swiftUI-tutorial-inhouse.debug.xcconfig */,
+				55BE8F689E729C9CFD86878A /* Pods-Todo-swiftUI-tutorial-inhouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D12F10F9256D3BE00082ADBA = {
 			isa = PBXGroup;
 			children = (
 				D12F1104256D3BE00082ADBA /* Todo-swiftUI-tutorial-inhouse */,
 				D12F1103256D3BE00082ADBA /* Products */,
+				CEBB58215D58D42196E53E2F /* Pods */,
+				FD82A4DFF3D68E91FB5F202B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +74,15 @@
 		D12F1104256D3BE00082ADBA /* Todo-swiftUI-tutorial-inhouse */ = {
 			isa = PBXGroup;
 			children = (
+				D19D67F4256F9A7F0055FD69 /* Controllers */,
+				D19D67F3256F9A6E0055FD69 /* Views */,
 				D12F1115256D3BFF0082ADBA /* Models */,
 				D12F1105256D3BE00082ADBA /* Todo_swiftUI_tutorial_inhouseApp.swift */,
 				D12F1107256D3BE00082ADBA /* ContentView.swift */,
+				D12F113B256E63600082ADBA /* AddTodoView.swift */,
 				D12F1109256D3BE30082ADBA /* Assets.xcassets */,
 				D12F110E256D3BE30082ADBA /* Info.plist */,
+				D12F111B256D53E30082ADBA /* GoogleService-Info.plist */,
 				D12F110B256D3BE30082ADBA /* Preview Content */,
 			);
 			path = "Todo-swiftUI-tutorial-inhouse";
@@ -80,6 +104,28 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D19D67F3256F9A6E0055FD69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D19D67F4256F9A7F0055FD69 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD82A4DFF3D68E91FB5F202B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EFBE7356D90242420CA8489 /* Pods_Todo_swiftUI_tutorial_inhouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D12F1111256D3BE30082ADBA /* Build configuration list for PBXNativeTarget "Todo-swiftUI-tutorial-inhouse" */;
 			buildPhases = (
+				CE8EB5FF00D94878A0E54778 /* [CP] Check Pods Manifest.lock */,
 				D12F10FE256D3BE00082ADBA /* Sources */,
 				D12F10FF256D3BE00082ADBA /* Frameworks */,
 				D12F1100256D3BE00082ADBA /* Resources */,
+				005304C3847A8A1A85BACF7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,10 +187,53 @@
 			files = (
 				D12F110D256D3BE30082ADBA /* Preview Assets.xcassets in Resources */,
 				D12F110A256D3BE30082ADBA /* Assets.xcassets in Resources */,
+				D12F111C256D53E30082ADBA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		005304C3847A8A1A85BACF7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo-swiftUI-tutorial-inhouse/Pods-Todo-swiftUI-tutorial-inhouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo-swiftUI-tutorial-inhouse/Pods-Todo-swiftUI-tutorial-inhouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Todo-swiftUI-tutorial-inhouse/Pods-Todo-swiftUI-tutorial-inhouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8EB5FF00D94878A0E54778 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Todo-swiftUI-tutorial-inhouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D12F10FE256D3BE00082ADBA /* Sources */ = {
@@ -151,6 +242,7 @@
 			files = (
 				D12F1108256D3BE00082ADBA /* ContentView.swift in Sources */,
 				D12F1117256D3C210082ADBA /* Todo.swift in Sources */,
+				D12F113C256E63600082ADBA /* AddTodoView.swift in Sources */,
 				D12F1106256D3BE00082ADBA /* Todo_swiftUI_tutorial_inhouseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +368,7 @@
 		};
 		D12F1112256D3BE30082ADBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36315E0266B1203B72414577 /* Pods-Todo-swiftUI-tutorial-inhouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +391,7 @@
 		};
 		D12F1113256D3BE30082ADBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55BE8F689E729C9CFD86878A /* Pods-Todo-swiftUI-tutorial-inhouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -9,6 +9,11 @@ import Foundation
 import SwiftUI
 
 struct Todo: Identifiable {
-    let id = UUID()
-    let name: String
+    var id = ""
+    var name: String
+    var description: String
+    var isDone: Bool
+    
 }
+
+
